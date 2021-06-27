@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/text2_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:textColor="#000000"
+            />
+        <TextView
+            android:id="@+id/text2_time"
+            android:background="@drawable/time_border"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="百度新闻 xxxx:xxxx:xxxx"
+            android:textSize="14dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/abstract_boder_main"
+            >
+            <TextView
+                android:background="@drawable/abstract_boder"
+                android:layout_width="35dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:text="摘要"
+                android:textSize="12dp"
+                android:gravity="center"
+                android:textColor="#ffffff"/>
+            <TextView
+                android:id="@+id/text2_abstract"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:text="TextView"
+                android:textSize="12dp"
+                android:textColor="#000000"
+                android:lineSpacingExtra="10dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text2_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="TextView"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:lineSpacingExtra="10dp"
+            />
+    </LinearLayout>
+</LinearLayout>

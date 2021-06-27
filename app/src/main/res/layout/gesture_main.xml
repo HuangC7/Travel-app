@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/train_top" />
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="#03acff"
+        android:layout_height="150dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hi，你好！"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:paddingTop="40dp"
+            android:paddingLeft="30dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="欢迎进入手势识别，下面您可以进行手势的存储和识别！"
+            android:textColor="@color/white"
+            android:paddingLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingTop="10dp"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/time_border"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            >
+            <EditText
+                android:id="@+id/gesture_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="输入手势对应值" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <Button
+                android:id="@+id/gesture_save"
+                android:background="@drawable/login_boder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:textColor="@color/white"
+                android:layout_toRightOf="@id/gesture_input"
+                android:onClick="btnClick"
+                android:text="手势输入" />
+
+            <Button
+                android:id="@+id/gesture_find"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_boder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:textColor="@color/white"
+                android:layout_below="@id/gesture_save"
+                android:onClick="btnClick"
+                android:text="手势识别" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/gesture_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/gesture_find" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="2dp"
+        android:layout_alignParentTop="true">
+        <ListView
+            android:id="@+id/lv_Popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#808080"
+            android:dividerHeight="1.0dip"
+            android:scrollbars="none"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:fadingEdge="none"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

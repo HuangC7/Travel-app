@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/life_button_top" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/f1_frag"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <!-- 第一行 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dip"
+                    android:orientation="horizontal"
+                    android:background="@color/white">
+
+                    <!-- 第一列 -->
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/zuobiao"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="60dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_City"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="全城"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="24px"/>
+
+                    </LinearLayout>
+                    <!-- 右下三角 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:background="@drawable/top_boder2"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_gravity="right"
+                            android:layout_marginTop="15dip"
+                            android:layout_marginRight="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/xialacaidan" />
+
+                    </LinearLayout>
+                    <!-- 第二列 -->
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:background="@drawable/fenlei"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="40dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_Class"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="全部类型"
+                            android:layout_marginLeft="10dp"
+                            android:textColor="#000000"
+                            android:textSize="24px"/>
+
+                    </LinearLayout>
+                    <!-- 右下三角 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_marginTop="15dp"
+                            android:layout_gravity="right"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/xialacaidan" />
+
+                    </LinearLayout>
+
+                    <!-- 空白占位 -->
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_weight="0.1"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"/>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="50dip"
+                    android:background="@color/white"/>
+
+
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fl_life_button"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/life_button_boder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

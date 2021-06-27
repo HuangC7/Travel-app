@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".finalassignment.WeatherActivity">
+
+    <include layout="@layout/train_top" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <androidx.viewpager.widget.PagerTabStrip
+                android:id="@+id/tab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></androidx.viewpager.widget.PagerTabStrip>
+        </androidx.viewpager.widget.ViewPager>
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="243dp"
+            android:layout_height="68dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:text="添加/更换"
+            android:textColor="#98FB98"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </LinearLayout>
+
+</LinearLayout>
